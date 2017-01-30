@@ -5,9 +5,24 @@ d>
     function init() {
         // Retrieving the text input's value which was stored into localStorage
         var mytext = localStorage.getItem("mytext");
+        var idku = localStorage.getItem("identitas");
 
         // Writing the value in the document
         document.write("passed value = "+mytext);
+        document.write("<br>passed value = "+idku);
+        document.write("<br>passed value = "+idku);
+        document.write("<br>passed value = "+idku);
+        document.write("<br>passed value = "+idku);
+        document.write("<br>passed value = "+idku);
+        if  (idku == "") { document.write("<BR>nama KOSONG!!!"); }
+
+        if (idku =="budi") {
+	    document.write("<br>MENANG!");
+        } else {
+            document.write("<br>KALAH!");
+        }
+
+        if (mytext > 100) { document.write("<br>lebih besar dari 100"); }
     }
 
 </script>
