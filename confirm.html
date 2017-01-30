@@ -1,0 +1,20 @@
+d>
+<script>
+
+    // Called on body's `onload` event
+    function init() {
+        // Retrieving the text input's value which was stored into localStorage
+        var mytext = localStorage.getItem("mytext");
+
+        // Writing the value in the document
+        document.write("passed value = "+mytext);
+    }
+
+</script>
+</head>    
+
+<body onload="init();">
+
+</body>
+
+</html>

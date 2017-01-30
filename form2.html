@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <title>Test</title>
+    <script type="text/javascript">
+    
+    function tosubmit(){
+        var mytext = document.getElementById("mytext").value;
+        localStorage.setItem("mytext", "zzz");
+        console.log(mytext);
+        return true;
+    }
+    </script>
+    </head>
+    
+    <body>
+        <center>
+        <form name="myform" onsubmit="tosubmit();" action="confirm.html">
+            <input id ="mytext" type="text" name="data">
+            <input type="submit" value="Submit">
+            </form>
+        </center>
+    </body>
+</html>
