@@ -11,4 +11,4 @@ The list of coders is here
 5. <a href="http://riskasyarif.github.io">riskasyarif.github.io</a>
 6. <a href="http://msoedirgo.github.io">msoedirgo.github.io</a>
 7. <a href="http://deibz.github.io"> deibz.github.io</a>
-8. <a href="http://ranarayya.github.io">ranarayya.github.io</a.
+8. <a href="http://ranarayya.github.io">ranarayya.github.io</a>
