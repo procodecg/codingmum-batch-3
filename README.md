@@ -5,7 +5,7 @@ This is the place where coding mum batch 3 exchange ideas. Files, actually. Test
 The list of coders is here
 
 1. <a href="http://fairuzrana.github.io">fairuzrana.github.io</a>
-2. lpink77.github.io
+2. <a href="http://lpink77.github.io">lpink77.github.io</a>
 3. daneshditya.github.io
 4. jazzynadz.github.io
 5. riskasyarif.github.io
