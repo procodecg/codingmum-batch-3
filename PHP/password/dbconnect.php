@@ -1,12 +1,12 @@
 <?php
 // Database settings
-// database hostname or IP. default:localhost // localhost will be correct for 99% of times $servername = "localhost";
+$servername = "localhost";
 // Database user
 $username = "procodecg";
 // Database password
 $password = "procodecg";
 // Database name
-$dbname = "contoh";
+$dbname = "procodecg";
 ############## Make the mysql connection ###########
 $conn = new mysqli($servername, $username, $password, $dbname); if ($conn->connect_error)
 {
