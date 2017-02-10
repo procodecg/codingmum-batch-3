@@ -2,15 +2,16 @@
 
 $id = $_POST['identitas'];
 $nama = $_POST['nama'];
+$deskripsi = $_POST['deskripsi']
 
 
 echo "ID: " . ($id) . "<br />"; 
 echo "Nama:" . ($nama) . "<br />";
-
+echo "Deskripsi:" . ($deskripsi) . "<br />";
 
 
    $servername = "localhost";
-   $username = "budi";
+   $username = "procodecg";
    $password = "procodecg";
    $dbname = "procodecgware";
 
@@ -21,7 +22,7 @@ echo "Nama:" . ($nama) . "<br />";
 
    //echo 'berhasil<br>';
 
-   $sql = "INSERT INTO `produk`(`id`, `nama`, `deskripsi`) VALUES ($id, '$nama', 'tidak ada')";
+   $sql = "INSERT INTO `produk`(`id`, `nama`, `deskripsi`) VALUES ($id, '$nama', '$deskripsi')";
 
    echo $sql;
    $result = $conn->query($sql);
