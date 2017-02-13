@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery.post demo</title>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <form action="process.php" method="post" id="searchForm">
+        Username: <input type="text" id="username" name="username"><br>
+        Password: <input type="text" id="password" name="password"><br>
+        <button type="submit" id="submit-btn">Teruskan</button>
+        <button type="button" id="post-btn">Post JS</button>
+    </form>
+    <script>
+        $("#post-btn").click(function(){
+            $.post("process.php", { "username": "okay"});
+            alert("ok");
+        });
+    </script>
+</body>
+
+</html>

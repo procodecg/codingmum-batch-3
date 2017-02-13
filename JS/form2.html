@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<title>Form Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<form action="process.php" method="post" id="reg-form">
+        Username: <input type="text" id="username" name="username">
+        <br>
+        Password: <input type="password" id="password" name="password">
+        <br>
+        <button type="submit" id="submit-btn">Traditional Submit</button>
+        <button type="button" id="post-btn">Post Submit</button>
+</form>
+
+<script>
+$("#post-btn").click(post_to_url("process.php",username));
+
+function post_to_url(url, params) {
+    var form = document.createElement('form');
+    form.action = url;
+    form.method = 'POST';
+
+    alert(params.hasOwnProperty(username));
+    for (var i in params) {
+        if (params.hasOwnProperty(i)) {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = i;
+            input.value = params[i];
+            form.appendChild(input);
+        }
+    }
+
+    form.submit();
+    }
+</script>
